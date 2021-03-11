@@ -18,5 +18,13 @@ public class Player extends SpriteObject {
 		// TODO Auto-generated method stub
 
 	}
+	
+    @Override
+    public void keyPressed(int keyCode, char key) {
+        final int speed = 5;
+        if (keyCode == world.LEFT) {
+          setDirectionSpeed(270, speed);
+        }
+    }
 
 }
