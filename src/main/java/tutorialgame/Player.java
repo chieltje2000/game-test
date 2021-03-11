@@ -2,6 +2,7 @@ package tutorialgame;
 
 import nl.han.ica.oopg.objects.Sprite;
 import nl.han.ica.oopg.objects.SpriteObject;
+import processing.core.PConstants;
 
 public class Player extends SpriteObject {
 	private TutorialWorld world;
@@ -22,7 +23,7 @@ public class Player extends SpriteObject {
     @Override
     public void keyPressed(int keyCode, char key) {
         final int speed = 5;
-        if (keyCode == world.LEFT) {
+        if (keyCode == PConstants.LEFT) {
           setDirectionSpeed(270, speed);
         }
     }
